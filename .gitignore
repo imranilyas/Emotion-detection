@@ -1,0 +1,14 @@
+###
+# Ignore mp4 video
+###
+src/*.mp4
+
+###
+# Ignore dataset
+###
+src/data/* 
+
+###
+# Ignore facial key model
+###
+src/FacialKeyPoints_weights.hdf5

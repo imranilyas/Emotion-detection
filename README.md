@@ -36,6 +36,14 @@ cd src
 python emotions.py --mode display
 ```
 
+* To run the pre-trained model on an mp4 video, download a video into the src folder and then run:
+
+```bash
+cd src
+python emotions_video.py --mode display --input FileName.mp4
+```
+"FileName" being the name of the video
+
 * The folder structure is of the form:  
   src:
   * data (folder)

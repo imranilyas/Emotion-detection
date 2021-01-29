@@ -96,11 +96,11 @@ if mode == "train":
             validation_data=validation_generator,
             validation_steps=num_val // batch_size)
     plot_model_history(model_info)
-    model.save_weights('model.h5')
+    model.save_weights('trained_model.h5')
 
 # emotions will be displayed on your face from the webcam feed
 elif mode == "display":
-    model.load_weights('model.h5')
+    model.load_weights('trained_model.h5')
 
     # prevents openCL usage and unnecessary logging messages
     cv2.ocl.setUseOpenCL(False)
